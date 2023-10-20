@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Qpyjf3Sc/BN7ZIun/cUDupK+14tAinC3leUlRVch9bc=",
+  "Source": "AzurePipeline",
+  "BasePath": "_content/AzurePipeline",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
