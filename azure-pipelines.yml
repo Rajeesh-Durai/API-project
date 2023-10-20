@@ -22,7 +22,10 @@ steps:
     version: 6.x
     performMultiLevelLookup: true
     includePreviewVersions: true # Required for preview versions
-
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
