@@ -11,14 +11,17 @@ pool:
   name: Default
 
 variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
 steps:
-- task: DotNetCoreCLI@2
+- task: NuGetToolInstaller@1
+
+- task: NuGetCommand@2
   inputs:
-    command: 'restore'
-    feedsToUse: 'select'
-    vstsFeed: 'my-vsts-feed' # A series of numbers and letters
+    restoreSolution: '$(solution)'
+
 
 - task: DotNetCoreCLI@2
   inputs:
