@@ -43,4 +43,4 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)' 
-    artifactName: 'MSTest-Publish-To-Pipline'
+    artifactName: 'MSTest-Publish-To-Pipeline'
